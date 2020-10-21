@@ -1,4 +1,5 @@
 @import '../../styles/utils/colors';
+@import '../../styles/utils/breakpoints';
 
 .submitButton{
   text-align: center;
@@ -10,4 +11,7 @@
   background-color: $grass-blade;
   padding: 0 2em;
   cursor: pointer;
+  @media only screen and (max-width: $mobile) {
+    width: auto;
+}
 }
